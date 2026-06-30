@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<div id="con" style="width: 100%; height: 100%; border: 2px solid #ABABAB">
+<img id="pdbloader" src="lib/icons/ajax-loader.gif" style="position:absolute; left:50%; top:50%; display:block;" />
+</div>
+<script src="https://molsoft.com/lib/acticm.js" wasm="1"></script>
+
+<script>
+function onLoadActiveIcm()
+{
+  console.log("main");
+  document.getElementById('pdbloader').style.display='none';
+  act = new ActiveIcmJS("con");
+  act.tableViewVisibleAuto = false;
+  act.htmlViewVisibleAuto = true;
+  act.projectFile = 'final_bin.icb';
+}
+</script>
+</body>
+</html>
