@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{subcaption}
 \bibliographystyle{plain}
 \title{Molecular Docking Study of Compounds 681 and 889 with Nuclear Receptors}
 \date{}
@@ -11,12 +12,14 @@
 
 \section{Methods}
 
-For each nuclear receptor (NR), experimentally determined ligand-bound structures and relevant structural and functional literature were reviewed to identify binding-pocket residues and ligand--receptor interactions associated with known agonists. These interactions were inspected in the corresponding crystal structures using\textit{ MolSoft ICM-Pro 3.9.5} \cite{abagyan1994icm} and used as a reference framework for interpreting the interactions of docked compounds 681 and 889. To account for receptor flexibility, ensemble docking was performed using multiple receptor conformations rather than a single fixed structure \cite{bottegoni2009four,guedes2014receptor,park2010improved,rueda2010recipes,totrov2008flexible}. Where available, previously reported ensemble-docking strategies for the relevant NR were considered; otherwise, structurally diverse ligand-bound conformations were identified using ProteinPlus and SIENA \cite{bietz2016siena,schoning2020proteins}. Candidate structures were assessed using StructureProfiler according to overall crystallographic quality, ligand and pocket electron-density support, ligand and local residue B-factors, occupancy, and OWAB measures \cite{friedrich2017high,hartshorn2007diverse,meyder2019structureprofiler,warren2012essential}. Ligand size, shape, and chemotype were also considered to retain conformers representing diverse experimentally observed pocket states, including more expanded binding-pocket conformations associated with larger co-crystallised ligands \cite{rueda2010recipes}. The highest-quality conformers were retained for docking, and poses of compounds 681 and 889 were assessed using predicted docking scores, the preferred receptor conformation, visual comparison with the corresponding co-crystallised ligand, and similarity to interaction patterns observed for known reference ligands \cite{errington2025assessing,fischer2021decision}.
+For each nuclear receptor (NR), experimentally determined ligand-bound structures and relevant structural and functional literature were reviewed to identify binding-pocket residues and ligand--receptor interactions associated with known agonists. These interactions were inspected in the corresponding crystal structures using \textit{MolSoft ICM-Pro 3.9.5} \cite{abagyan1994icm} and used as a reference framework for interpreting the interactions of docked compounds 681 and 889. To account for receptor flexibility, ensemble docking was performed using multiple receptor conformations rather than a single fixed structure \cite{bottegoni2009four,guedes2014receptor,park2010improved,rueda2010recipes,totrov2008flexible}. Where available, previously reported ensemble-docking strategies for the relevant NR were considered; otherwise, structurally diverse ligand-bound conformations were identified using ProteinPlus and SIENA \cite{bietz2016siena,schoning2020proteins}. Candidate structures were assessed using StructureProfiler according to overall crystallographic quality, ligand and pocket electron-density support, ligand and local residue B-factors, occupancy, and OWAB measures \cite{friedrich2017high,hartshorn2007diverse,meyder2019structureprofiler,warren2012essential}. Ligand size, shape, and chemotype were also considered to retain conformers representing diverse experimentally observed pocket states, including more expanded binding-pocket conformations associated with larger co-crystallised ligands \cite{rueda2010recipes}. Before docking the candidate compounds, each co-crystallised ligand was redocked into its corresponding receptor conformation to assess whether the docking workflow could reproduce the experimentally observed binding pose and to provide receptor-specific reference docking scores. The conformers retained from the previous step was then used for docking of compounds 681 and 889, whose poses were individually assessed using predicted docking scores relative to these reference values, the preferred receptor conformation, visual comparison with the corresponding co-crystallised ligand, and similarity to interaction patterns observed for known reference ligands \cite{errington2025assessing,fischer2021decision}.
+
 
 
 
 
 \section{Results with Androgen Receptor}
+\input{AR/ar_tex/ar}
 
 \bibliography{ref}
 
