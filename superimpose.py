@@ -13,7 +13,7 @@ pdf = fitz.open(interaction_2D)
 page = pdf[0]  # first page of the PDF
 
 # Render at higher resolution for clarity
-pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=True)
+pix = page.get_pixmap(matrix=fitz.Matrix(4, 4), alpha=True)
 
 # Convert PDF page into a Pillow image
 overlay = Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGBA")
