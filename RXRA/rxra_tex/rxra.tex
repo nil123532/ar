@@ -1,0 +1,24 @@
+\subsection{Analysis of Docking Scores}
+To our knowledge, no previous studies have applied 4D docking to RXR$\alpha$. Therefore, receptor conformations were selected from the NR-DBIND dataset \cite{reau2018nuclear} and evaluated using StructureProfiler \cite{meyder2019structureprofiler,schoning2020proteins} to identify structures with suitable crystallographic quality for docking. The retained RXR$\alpha$ structures were 1MVC, 1MZN, 4PP5, 4K4J, 4K6I and 4M8H \cite{atigadda2014methyl,egea2002molecular,boerma2014defining}. As in the previous analysis, the co-crystallised ligands were extracted and converted into 2D representations, thereby removing their original crystallographic coordinates, before being redocked against the RXR$\alpha$ receptor ensemble. This procedure provided a reference distribution against which the docking scores of the candidate compounds could be assessed. The resulting docking scores are presented in Table~\ref{tab:rxra_redocking_scores}.
+
+
+\input{RXRA/table/table}
+
+
+Both compounds produced docking scores outside the range observed for the cognate RXR$\alpha$ ligands, which extended from $-57.61$ to $-31.55$. The control ligands had a mean docking score of $-46.20$ with a standard deviation of $11.44$, corresponding to a one-standard-deviation interval of approximately $-57.64$ to $-34.76$. The docking scores of Compound 681 ($-28.28$) and Compound 889 ($-1.78$) therefore fell outside both the observed control range and the one-standard-deviation interval, with Compound 889 showing a particularly large deviation from the scores obtained for the cognate ligands. 
+
+
+\subsection{Interactions and Visual Analysis}
+Although Compounds 681 and 889 superimposed well with the control ligand in their preferred docked conformations, neither compound reproduced the characteristic interactions commonly associated with RXR$\alpha$ ligand binding. In particular, they did not form hydrogen-bonding interactions with Arg316 or with Ala327. Neither compound also formed a clear $\pi$--$\pi$ interaction with Phe313, despite containing an aromatic ring. Taken together, these findings suggest that Compounds 681 and 889 do not adopt a canonical RXR$\alpha$ binding mode and are therefore unlikely to bind favourably within the ligand-binding pocket. This may be attributed to the absence of an appropriately positioned polar oxygen-containing group, a common feature of RXR$\alpha$ ligands that typically provides key anchoring interactions within the polar region of the binding pocket.
+
+\subsection*{Discussion}
+
+
+\begin{itemize}
+    \item Both compounds produced docking scores outside the range observed for the cognate RXR$\alpha$ ligands.
+
+    \item Neither compound reproduced the key interactions with Arg316, Ala327 or Phe313.
+
+    \item These results suggest that Compounds 681 and 889 are unlikely to bind RXR$\alpha$ favourably.
+\end{itemize}
+
